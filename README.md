@@ -1,6 +1,6 @@
 # Playfab_Repo
 This repo created by education purpose
 
-##Contents
-###Auhentication
+## Contents
+### Auhentication
 Pc, Android and Ios
