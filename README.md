@@ -6,7 +6,7 @@ This repo created by education purpose
 Pc, Android and Ios
 
 ### Networks
-Leaderboard, Cloud save , Netcode multiplayer coding and using playfab server
+Leaderboard, Cloud save, Cloud functions, Netcode multiplayer coding and using playfab server
 
 ## Game Logic
 2d simple co-op gaming and this project created unity version 2021.3.11f1
