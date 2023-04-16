@@ -1,4 +1,3 @@
-using System;
 using Playfab_Tutorial.Handlers;
 using Playfab_Tutorial.Inputs;
 using PlayFab_Tutorial.Movements;
@@ -9,7 +8,7 @@ namespace PlayFab_Tutorial.Controllers
 {
     public class PlayerNetworkModelController : NetworkBehaviour
     {
-        [SerializeField] NetworkVariable<int> _score;
+        [SerializeField] int _score;
         [SerializeField] float _speed = 5f;
         [SerializeField] Animator _animator;
         [SerializeField] Transform _body;
@@ -51,9 +50,10 @@ namespace PlayFab_Tutorial.Controllers
             _animationHandler.MovementAnimation(_input.Direction.magnitude);
         }
 
-        public void ScoreIncrease(int score)
+        [ClientRpc]
+        public void ScoreIncreaseClientRpc(int score)
         {
-            _score.Value += score;
+            _score += score;
         }
 
         void OnTriggerEnter2D(Collider2D other)

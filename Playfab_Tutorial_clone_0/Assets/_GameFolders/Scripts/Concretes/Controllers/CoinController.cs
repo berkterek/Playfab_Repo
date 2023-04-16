@@ -12,7 +12,7 @@ public class CoinController : NetworkBehaviour
 
     public void Collected(PlayerNetworkModelController playerModel)
     {
-        playerModel.ScoreIncrease(_score);
+        playerModel.ScoreIncreaseClientRpc(_score);
 
         EnableDisableProcessClientRpc(false);
     }
